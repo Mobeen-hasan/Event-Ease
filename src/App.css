@@ -1,0 +1,103 @@
+/* src/App.css */
+
+/* Ensure body takes full width and resets margins */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scrollbar if animations go off-screen */
+  width: 100%;
+}
+
+/* --- Navbar --- */
+.navbar-custom {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 15px 0;
+  width: 100%; /* Force full width */
+}
+
+.brand-logo {
+  font-weight: 800;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none; /* Removes underline from link */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  padding: 80px 0;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Force full width background */
+}
+
+/* Keep the rest of your CSS (cards, wizard, etc.) below here... */
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #ec4899;
+  --accent-color: #f59e0b;
+}
+.text-primary-custom { color: var(--primary-color); }
+.bg-primary-custom { background-color: var(--primary-color); }
+
+.hero-title {
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.wizard-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+  padding: 30px;
+  background: white;
+}
+
+.wizard-btn {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border: none;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.wizard-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.category-card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 1.5rem;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background: var(--primary-color);
+}
